@@ -1,0 +1,5 @@
+package com.example.mini_projet_cabinet;
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+}

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="586.0" prefWidth="722.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mini_projet_cabinet.Doctor">
+   <children>
+      <VBox layoutX="13.0" layoutY="14.0" prefHeight="278.0" prefWidth="695.0">
+         <children>
+            <HBox prefHeight="84.0" prefWidth="695.0">
+               <children>
+                  <AnchorPane prefHeight="65.0" prefWidth="229.0">
+                     <children>
+                        <TextField fx:id="doctorid" layoutX="14.0" layoutY="26.0" prefHeight="26.0" prefWidth="206.0" promptText="5 Numbers..." />
+                        <Label layoutX="14.0" text="Doctor_ID" textAlignment="CENTER" textFill="#18253b">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="erreurid" layoutX="13.0" layoutY="52.0" prefHeight="18.0" prefWidth="206.0" textFill="#991010" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="54.0" prefWidth="230.0">
+                     <children>
+                        <TextField fx:id="first" layoutX="14.0" layoutY="27.0" prefHeight="26.0" prefWidth="206.0" />
+                        <Label layoutX="14.0" text="Firstname" textAlignment="CENTER" textFill="#18253b">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="54.0" prefWidth="230.0">
+                     <children>
+                        <TextField fx:id="last" layoutX="14.0" layoutY="27.0" prefHeight="26.0" prefWidth="206.0" />
+                        <Label layoutX="14.0" prefHeight="27.0" prefWidth="82.0" text="Lastname" textAlignment="CENTER" textFill="#18253b">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="erreurlast" layoutX="14.0" layoutY="53.0" prefHeight="18.0" prefWidth="206.0" textFill="#991010" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="150.0" prefWidth="695.0">
+               <children>
+                  <VBox prefHeight="140.0" prefWidth="207.0">
+                     <children>
+                        <AnchorPane prefHeight="58.0" prefWidth="82.0">
+                           <children>
+                              <AnchorPane layoutX="14.0" prefHeight="58.0" prefWidth="105.0">
+                                 <children>
+                                    <Label layoutX="3.0" text="Gendre" textAlignment="CENTER" textFill="#18253b">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox fx:id="gendre" layoutX="3.0" layoutY="29.0" prefHeight="26.0" prefWidth="98.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="95.0" prefHeight="58.0" prefWidth="126.0">
+                                 <children>
+                                    <TextField fx:id="cin" layoutX="35.0" layoutY="31.0" prefHeight="26.0" prefWidth="89.0" promptText="8 Numbers..." />
+                                    <Label layoutX="35.0" layoutY="3.0" text="CIN" textAlignment="CENTER" textFill="#18253b">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="64.0" prefWidth="192.0">
+                           <children>
+                              <TextField fx:id="phone" layoutX="14.0" layoutY="37.0" prefHeight="26.0" prefWidth="206.0" promptText="8 Numbers..." />
+                              <Label layoutX="14.0" layoutY="9.0" text="Phone_No" textAlignment="CENTER" textFill="#18253b">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="erreurcin" layoutX="129.0" layoutY="-1.0" prefHeight="18.0" prefWidth="90.0" textFill="#991010" />
+                           </children>
+                        </AnchorPane>
+                        <BorderPane prefHeight="18.0" prefWidth="154.0">
+                           <top>
+                              <Label fx:id="erreurphone" prefHeight="18.0" prefWidth="190.0" textFill="#991010" BorderPane.alignment="CENTER" />
+                           </top>
+                        </BorderPane>
+                     </children>
+                  </VBox>
+                  <AnchorPane prefHeight="122.0" prefWidth="230.0">
+                     <children>
+                        <TextField fx:id="address" layoutX="23.0" layoutY="27.0" prefHeight="94.0" prefWidth="206.0" />
+                        <Label layoutX="23.0" text="Address" textAlignment="CENTER" textFill="#18253b">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="116.0" prefWidth="230.0">
+                     <children>
+                        <Label layoutX="23.0" prefHeight="27.0" prefWidth="126.0" text="Working Days" textAlignment="CENTER" textFill="#18253b">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="-1.0" layoutY="57.0" prefHeight="58.0" prefWidth="194.0">
+                           <children>
+                              <TextField fx:id="hours" layoutX="23.0" layoutY="37.0" prefHeight="26.0" prefWidth="206.0" />
+                              <Label layoutX="23.0" layoutY="9.0" prefHeight="27.0" prefWidth="135.0" text="Working Hours" textAlignment="CENTER" textFill="#18253b">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <DatePicker fx:id="days" layoutX="23.0" layoutY="27.0" prefHeight="26.0" prefWidth="206.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="82.0" prefWidth="695.0">
+               <children>
+                  <AnchorPane prefHeight="58.0" prefWidth="194.0">
+                     <children>
+                        <Label layoutX="14.0" text="Departement" textAlignment="CENTER" textFill="#18253b">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="cb" layoutX="14.0" layoutY="27.0" prefHeight="26.0" prefWidth="206.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="76.0" prefWidth="228.0">
+                     <children>
+                        <TextField fx:id="pass" layoutX="21.0" layoutY="27.0" prefHeight="26.0" prefWidth="206.0" />
+                        <Label layoutX="21.0" text="Password" textAlignment="CENTER" textFill="#18253b">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="pass2" layoutX="22.0" layoutY="28.0" prefHeight="26.0" prefWidth="206.0" />
+                        <Label fx:id="erreurpass" layoutX="132.0" layoutY="57.0" prefHeight="18.0" prefWidth="106.0" textFill="#991010" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="70.0" prefWidth="234.0">
+                     <children>
+                        <TextField fx:id="username" layoutX="17.0" layoutY="28.0" prefHeight="26.0" prefWidth="187.0" />
+                        <Label layoutX="14.0" prefHeight="27.0" prefWidth="82.0" text="Username" textAlignment="CENTER" textFill="#18253b">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="searchb" layoutX="204.0" layoutY="25.0" mnemonicParsing="false" onAction="#search" prefHeight="31.0" prefWidth="30.0" style="-fx-background-color: white;">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../image/search.PNG" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="submit" layoutX="584.0" layoutY="319.0" mnemonicParsing="false" onAction="#saveAction" prefHeight="38.0" prefWidth="114.0" style="-fx-background-color: #3C72A2;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/ajouter.PNG" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="updateB" layoutX="584.0" layoutY="386.0" mnemonicParsing="false" onAction="#update" prefHeight="38.0" prefWidth="114.0" style="-fx-background-color: #3C72A2;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/updat.PNG" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="584.0" layoutY="452.0" mnemonicParsing="false" onAction="#reset" prefHeight="38.0" prefWidth="114.0" style="-fx-background-color: #3C72A2;" text="Reset" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/del.PNG" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TableView fx:id="tabledoctor" layoutX="24.0" layoutY="319.0" onMouseClicked="#getItems" prefHeight="238.0" prefWidth="534.0" stylesheets="@../../../../java/com/example/mini_projet_cabinet/tableview.css">
+        <columns>
+            <TableColumn fx:id="coluser" prefWidth="67.20001602172852" style="-fx-alignment: center;" text="Username" />
+          <TableColumn fx:id="colid" minWidth="0.0" prefWidth="74.39996337890625" style="-fx-alignment: center;" text="Doctor_Id" />
+          <TableColumn fx:id="colfirst" prefWidth="72.800048828125" style="-fx-alignment: center;" text="Firstname" />
+            <TableColumn fx:id="collast" minWidth="0.0" prefWidth="76.79997253417969" style="-fx-alignment: center;" text="Lastname" />
+            <TableColumn fx:id="colpass" prefWidth="69.5999755859375" style="-fx-alignment: center;" text="Password" />
+            <TableColumn fx:id="coldays" prefWidth="79.20001220703125" style="-fx-alignment: center;" text="Work_Days" />
+            <TableColumn fx:id="colhours" minWidth="0.0" prefWidth="99.20001220703125" style="-fx-alignment: center;" text="Work_Hours" />
+        </columns>
+      </TableView>
+      <CheckBox fx:id="checkbox" layoutX="256.0" layoutY="284.0" mnemonicParsing="false" onAction="#changeVisibility" prefHeight="18.0" prefWidth="126.0" text="Show Password" textFill="#18253b">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </CheckBox>
+      <Button layoutX="584.0" layoutY="518.0" mnemonicParsing="false" onAction="#details" prefHeight="38.0" prefWidth="114.0" style="-fx-background-color: #3C72A2;" text="Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/details.PNG" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

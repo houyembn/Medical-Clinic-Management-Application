@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="698.0" prefWidth="890.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mini_projet_cabinet.Menu">
+   <children>
+      <VBox prefHeight="698.0" prefWidth="188.0" style="-fx-background-color: #3C72A2;">
+         <children>
+            <AnchorPane fx:id="pn2status" prefHeight="700.0" prefWidth="188.0" style="-fx-background-color: #3C72A2;">
+               <children>
+                  <Button fx:id="doctorBtn" alignment="CENTER" layoutX="1.0" layoutY="183.0" mnemonicParsing="false" onAction="#doctor" prefHeight="42.0" prefWidth="186.0" style="-fx-background-color: #3F79AD;" text="Doctor Card" textAlignment="CENTER" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../image/doctor.PNG" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="patientBtn" alignment="CENTER" layoutY="255.0" mnemonicParsing="false" onAction="#pateint" prefHeight="42.0" prefWidth="186.0" style="-fx-background-color: #3F79AD;" text="Patient Card" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../image/patient..PNG" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="appBtn" alignment="CENTER" layoutX="-2.0" layoutY="327.0" mnemonicParsing="false" onAction="#appointment" prefHeight="42.0" prefWidth="186.0" style="-fx-background-color: #3F79AD;" text="Appointment" textAlignment="CENTER" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../image/rdv.PNG" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="logoutBtn" alignment="CENTER" layoutX="1.0" layoutY="610.0" mnemonicParsing="false" onAction="#logout" prefHeight="42.0" prefWidth="186.0" style="-fx-background-color: #3F79AD;" text="Logout" textAlignment="CENTER" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="50.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../image/logout.PNG" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane layoutX="3.0" prefHeight="138.0" prefWidth="183.0">
+                     <children>
+                        <ImageView fitHeight="87.0" fitWidth="160.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../image/logo.PNG" />
+                           </image>
+                        </ImageView>
+                        <AnchorPane layoutX="12.0" layoutY="110.0" prefHeight="1.0" prefWidth="153.0" style="-fx-background-color: white;" />
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="appBtn1" alignment="CENTER" layoutX="-3.0" layoutY="399.0" mnemonicParsing="false" onAction="#check" prefHeight="42.0" prefWidth="186.0" style="-fx-background-color: #3F79AD;" text="Check App" textAlignment="CENTER" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../image/date.PNG" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane layoutX="2.0" layoutY="225.0" prefHeight="30.0" prefWidth="183.0" />
+                  <AnchorPane layoutX="-1.0" layoutY="297.0" prefHeight="30.0" prefWidth="183.0" />
+                  <AnchorPane layoutX="-1.0" layoutY="369.0" prefHeight="30.0" prefWidth="183.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <VBox layoutX="175.0" prefHeight="118.0" prefWidth="733.0" style="-fx-background-color: #3C72A2;">
+         <children>
+            <BorderPane fx:id="pn1status" prefHeight="118.0" prefWidth="733.0">
+               <center>
+                  <Label fx:id="labelstatus" prefHeight="75.0" prefWidth="264.0" text="  Doctor Card" textAlignment="CENTER" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="38.0" />
+                     </font>
+                  </Label>
+               </center>
+               <right>
+                  <AnchorPane prefHeight="118.0" prefWidth="40.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="fermerbtn" layoutX="2.0" layoutY="3.0" minHeight="20.0" minWidth="42.0" mnemonicParsing="false" onAction="#exist" prefHeight="42.0" prefWidth="54.0" style="-fx-background-color: #3C72A2;">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../image/fermer3.PNG" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </right>
+               <left>
+                  <AnchorPane prefHeight="118.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+               </left>
+            </BorderPane>
+         </children></VBox>
+      <AnchorPane layoutX="182.0" layoutY="110.0" prefHeight="588.0" prefWidth="710.0" style="-fx-background-color: white;">
+         <children>
+            <StackPane fx:id="content" layoutX="3.0" prefHeight="587.0" prefWidth="723.1" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
